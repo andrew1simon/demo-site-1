@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
 }
@@ -86,8 +87,9 @@ body {
 .sub-section-two {
     padding-left: 74px;
     padding-right: 74px;
-    display: flex;
-    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    width: 1100px;
     align-content: center;
     justify-content: center;
     margin: 0px;
@@ -101,7 +103,6 @@ body {
     margin: 0px ;
 }
 .column-img-s {
-width: 18%;
 margin-left: 10px;
 margin-right: 10px;
 }
@@ -182,7 +183,8 @@ margin-right: 10px;
 }
 .section-three {
     width: 1400px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5 , auto);
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -558,3 +560,96 @@ li.header-text.active {
       transform-origin: 50% 50%;
     }
   }
+  @media screen and (max-width: 600px) {
+    .column-img-s {
+       
+    }
+    img.img-5-column {
+        margin: auto;
+        display: flex;
+        width: auto;
+        padding: 10px;
+    }
+    .sub-section-two {
+        grid-template-columns: repeat(2, 45%);
+        grid-row-gap: 15px;
+        grid-column-gap: 5px;
+        max-width: 100%;
+        max-width: 100%;
+    }
+    .section-two-b {
+        display: grid;
+        grid-row-gap: 35px;
+        padding: 20px 45px;
+    }
+    .section-three {
+        display: grid;
+        grid-template-columns: repeat(1 , auto);
+
+    }
+    .banner-g {
+        width: 100%;
+    }
+    .column-section-three-g {
+        width: 100%;
+    }
+    .big-banner-column {
+       width: 100%;
+    }
+    .big-banner-overlay {
+    padding: 40px;
+    }
+    .big-banner-title {
+    font-size: 35px;
+    }
+    .features-section {
+        width: 100%;
+    }
+    .footer {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 30px;
+    }
+    .column-footer {
+        width: 100%;
+    }
+    .image-center-div {
+    display: block;
+    margin: auto;
+    }
+    .img-footer {
+        width: 144px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        padding-top: 30px;
+  }
+  .column-features {
+      width: 100%;
+  }
+  .banner-overlay {
+    padding-top: 80px;
+  }
+  .column-hero {
+    width: 100%;
+}
+.text-hero {
+    font-size: 35px;
+}
+.sub-text-hero {
+    font-size: 25px;
+}
+ul.menu-header {
+    display: none;
+}
+.top-sub-column-hero {
+    display: flex;
+     width: 100%; 
+    }
+    .hero-overlay {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
