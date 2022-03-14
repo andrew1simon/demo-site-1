@@ -728,6 +728,8 @@ button.menu-open-btn.active {
   }
   .column-features {
       width: 100%;
+      padding: 10px 0px;
+    margin: 0;
   }
   .banner-overlay {
     padding-top: 80px;
