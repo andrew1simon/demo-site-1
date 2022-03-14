@@ -3,28 +3,39 @@
 <head>    
     <link rel="stylesheet" href="all-styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,900,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
 </head>
 <body>
-    <nav class="header">
-        <div>
-           <img src="https://demo-site1.andrew-demos.ml/img/logo.png" class="logo-img">
-         </div>
-         <div>
-         <ul>
-           <li class="header-text"><a href="#">Home</a></li>
-           <li class="header-text"><a href="#">About</a></li>
-           <li class="header-text"><a href="#">Shop</a></li>
-           <li class="header-text"><a href="#">Contact</a></li>
-         </ul>   
-         </div>
-         
-       </nav>
+   
+    <div class="header-cont">
+        <nav class="header">
+            <div>
+               <img src="https://demo-site1.andrew-demos.ml/img/logo.png" class="logo-img">
+             </div>
+             <div>
+             <ul>
+               <li class="header-text"><a href="#">Home</a></li>
+               <li class="header-text"><a href="#">About</a></li>
+               <li class="header-text"><a href="#">Shop</a></li>
+               <li class="header-text"><a href="#">Contact</a></li>
+             </ul>   
+             <div class="mobile-menu-btn-cont"><button class="menu-open-btn"><i class="fas fa-bars"></i></button></div>
+           
+             </div>
+             
+           </nav>
+          
+    </div>
+    
+    
     <div class="hero">
     <div class="hero-overlay"> 
         <div class="column-hero">
-            <h1 class="text-hero">Raining Offers For Hot Summer!</h1>
+            <h1 class="text-hero animate__animated animate__fadeInDown">Raining Offers For Hot Summer!</h1>
             <p class="sub-text-hero">25% Off On All Products</p>
             <div class="top-sub-column-hero">
             <div class="sub-column-hero">
@@ -204,7 +215,21 @@
         
             </div>
         </div>
-        
+        <div class="mobile-menu-upper-cont">
+            <button class="mobile-menu-close-btn">x</button>
+            <div class="mobile-menu-cont">
+                <div class="mobile-menu">
+                    <ul>
+                        <li class="mobile-menu-text"><a href="#">Home</a></li>
+                        <li class="mobile-menu-text"><a href="#">About</a></li>
+                        <li class="mobile-menu-text"><a href="#">Shop</a></li>
+                        <li class="mobile-menu-text"><a href="#">Contact</a></li>
+                      </ul>    
+                     
+             </div>
+        </div> 
+        </div>
+       
         </body>
         <script src="/app.js"></script>
         

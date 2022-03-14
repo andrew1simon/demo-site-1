@@ -11,7 +11,7 @@ let IntersectingEntryBannerO = ""
      if (entry.target.className == "banner-overlay" ) {
       if (entry.isIntersecting) {
         IntersectingEntryBannerO = entry.isIntersecting
-        document.querySelectorAll(".header, .header-text, .logo-img").forEach(e => {
+        document.querySelectorAll(".header, .header-text, .logo-img , .menu-open-btn").forEach(e => {
          e.classList.add("active")
        })
        }else {
@@ -19,7 +19,7 @@ let IntersectingEntryBannerO = ""
        }
      }if (entry.target.className == "hero" && IntersectingEntryBannerO == false) {
        console.log("thats a hero") 
-       document.querySelectorAll(".header, .header-text, .logo-img").forEach(e => {
+       document.querySelectorAll(".header, .header-text, .logo-img ,.menu-open-btn").forEach(e => {
         e.classList.remove("active")
        
       })
@@ -32,6 +32,24 @@ let IntersectingEntryBannerO = ""
   }, options)
   activatorSec.observe(section);
   activatorSec.observe(hero);
+  
+  // mobile menu 
+
+  const closebtn = document.querySelector(".mobile-menu-close-btn");
+  const mobileMenuCont =   document.querySelector(".mobile-menu-upper-cont")
+  const openBtn = document.querySelector(".menu-open-btn")
+closebtn.addEventListener("click", e=>{
+  mobileMenuCont.classList.add("animate__animated" , "animate__fadeOutDown")
+  setTimeout(removeActive , 1000)
+})
+openBtn.addEventListener("click" , e=>{
+  mobileMenuCont.classList.add("active" , "animate__animated" , "animate__fadeInUp")
+})
+
+  function removeActive () {
+    mobileMenuCont.classList.remove("active","animate__animated" , "animate__fadeOutDown");
+  }
+  
   /* 
   //const activatorSec = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
